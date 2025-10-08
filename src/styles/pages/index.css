@@ -1,0 +1,281 @@
+#mainLogo {
+  width: clamp(50px, 5vw, 300px);
+  position: fixed;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+  border-radius: 10px;
+  margin: 2rem;
+  z-index: 1000;
+}
+
+#mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  --half-black: rgba(0, 0, 0, 0.15);
+  --grid-size: 50px;
+
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--half-black) 25%,
+      var(--half-black) 26%,
+      transparent 27%,
+      transparent
+    ),
+    linear-gradient(90deg, transparent 24%, var(--half-black) 25%, var(--half-black) 26%, transparent 27%, transparent);
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+#myButton {
+  font-size: 24px;
+  background-color: rgb(107, 181, 255);
+  color: white;
+}
+
+#editorContainer {
+  position: fixed;
+  cursor: grab;
+}
+
+#editor {
+  width: 100%;
+  min-height: 70px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.note {
+  background-color: #f0f0f0;
+  min-width: 150px;
+  max-width: 250px;
+  min-height: 150px;
+  padding: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  border-radius: var(--border-radius-half);
+}
+
+#menuWrapper {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  z-index: 999;
+  bottom: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#menuTab {
+  background-color: var(--dark-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-half);
+}
+
+#menuTab button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  color: var(--light-grey);
+
+  --btn-size: 30px;
+  width: var(--btn-size);
+  height: var(--btn-size);
+
+  font-size: 25px;
+}
+
+#addNotes:hover {
+  color: rgb(140, 131, 224);
+}
+
+#saveNotes:hover {
+  color: rgb(140, 131, 224);
+}
+
+#resetAllNotes:hover {
+  color: rgb(255, 72, 72);
+}
+
+#noteOptionTab {
+  position: absolute;
+  right: -3rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--dark-grey);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-quarter);
+}
+
+#noteOptionTab .color-input,
+#noteOptionTab #deleteNote {
+  --noteopt-menu-sizing: 22px;
+  width: var(--noteopt-menu-sizing);
+  height: var(--noteopt-menu-sizing);
+}
+
+#noteOptionTab .color-input {
+  border: 2px solid var(--light-grey);
+}
+
+#noteOptionTab input[type='color'] {
+  opacity: 0;
+  display: block;
+  cursor: pointer;
+}
+
+#deleteNote {
+  font-size: 18px;
+  background-color: transparent;
+  color: var(--light-grey);
+}
+
+#deleteNote:hover {
+  color: rgb(255, 72, 72);
+}
+
+#popup {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  backdrop-filter: blur(25px);
+}
+
+#alertLogoContainer {
+  width: 100%;
+  --border-radius-alert: 15px;
+  border-top-left-radius: var(--border-radius-alert);
+  border-top-right-radius: var(--border-radius-alert);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popupAlertContainer {
+  width: clamp(300px, 40vw, 350px);
+  background-color: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+
+#popupAlertContainer p,
+#popupAlertContainer h1 {
+  text-align: center;
+}
+
+#popupAlertContainer h1 {
+  margin: 0.5rem;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  color: rgb(255, 72, 72);
+}
+
+#popupAlertContainer p {
+  --vertical-margin: 1rem;
+  margin-left: var(--vertical-margin);
+  margin-right: var(--vertical-margin);
+  margin-bottom: 1.5rem;
+  color: white;
+  max-width: 250px;
+  font-size: clamp(14px, 0.75rem, 128px);
+}
+
+#confirmResetNotesButtons {
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#confirmResetNotesButtons button {
+  font-size: 16px;
+  padding: .75rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-weight: bold;
+}
+
+#cancelResetAllNotes {
+  color: var(--dark-grey);
+  background-color: var(--light-grey);
+}
+
+#confirmResetAllnotes {
+  background-color: rgb(255, 72, 72);
+  color: white;
+}
+
+/* #deleteNote:hover, #deleteNOte:active {} */
+
+@media (max-width: 1320px) {
+  #mainContainer {
+    --mobile-grid-size: 50px;
+    background-size: var(--mobile-grid-size) var(--mobile-grid-size);
+  }
+
+  #menuTab button {
+    --btn-size: 50px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+  }
+
+  #menuTab {
+    padding: 0.25rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 400px), (max-height: 500px) {
+  #mainLogo {
+    margin: 1rem;
+  }
+
+  #menuTab {
+    gap: 1rem;
+    bottom: 2rem;
+    padding: 0.25rem;
+  }
+
+  #menuTab button {
+    --btn-size: 50px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    font-size: 20px;
+  }
+}
