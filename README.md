@@ -36,7 +36,7 @@ Buat dan simpan catatan penting dengan bentuk <i>Sticky Notes</i>. Tulis catatan
 
 
 ### 🌐 Demo
-- Akses aplikasi desktop dapat didownload pada _**[COMING SOON]**_
+- Akses aplikasi desktop dapat didownload pada _[Release](https://github.com/SoLiDinity/scribenote-2.0/releases/tag/v0.2.0)_ 
 - Akses aplikasi web dapat diakses pada _**[COMING SOON]**_
 
 <hr>
