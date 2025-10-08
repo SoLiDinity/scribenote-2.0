@@ -42,12 +42,15 @@ Buat dan simpan catatan penting dengan bentuk <i>Sticky Notes</i>. Tulis catatan
 <hr>
 
 ## 📄 How To Install
+
+##### _*Note: Pastikan untuk sudah memiliki Node.js dan npm_  
+
 Untuk menyimpan proyek berikut ke perangkat lokal, terdapat beberapa langkah berikut yang perlu dilakukan. Jalankan command berikut pada terminal untuk melakukan klon proyek di perangkat lokal:
 ```
-git clone https://github.com/SoLiDinity/scribenotes-2.0.git
+git clone https://github.com/SoLiDinity/scribenote-2.0.git
 ```
 
-Pastikan untuk memiliki Node.js dan npm, kemudian jalankan command berikut untuk menginstall seluruh modul yang dibutuhkan pada `package.json` agar dapat menjalankan proyek dengan menjalankan command berikut:
+Jalankan command berikut untuk menginstall seluruh modul yang dibutuhkan pada `package.json` agar dapat menjalankan proyek dengan menjalankan command berikut:
 ```
 npm i
 ```
