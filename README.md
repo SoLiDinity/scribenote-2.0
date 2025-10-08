@@ -64,8 +64,7 @@ Jalankan build dan bundling aplikasi web menggunakan command berikut:
 ```
 npm run build
 ```
-
-Jalankan tes hasil build menggunakan command berikut:
+Hasil dari build aplikasi web akan tersimpan pada direktori `/dist`. Jalankan tes dari hasil build menggunakan command berikut:
 ```
 npm run serve
 ```
@@ -82,6 +81,7 @@ Jalankan build dan bundling aplikasi desktop menggunakan command berikut:
 ```
 npm run tauri build
 ```
+Hasil dari build aplikasi desktop akan tersimpan pada `/src-tauri/target/release`. Dalam direktori ini akan terdapat file aplikasi yang telah dikompilasi dan siap untuk didistribusikan, termasuk file eksekusi (.exe di Windows, .app di macOS) pada atau paket instalasi pada direktori `/bundle`.
 
 <hr>
 
