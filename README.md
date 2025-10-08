@@ -87,3 +87,4 @@ Hasil dari build aplikasi desktop akan tersimpan pada `/src-tauri/target/release
 
 ## 📷 Preview
 
+<img width="1920" height="1011" alt="Screenshot (202)" src="https://github.com/user-attachments/assets/a386e717-432c-41da-8dcf-bc73db988084" />
