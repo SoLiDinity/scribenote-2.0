@@ -1,7 +1,7 @@
 <div align="center">
   
-  [ScribeNote 2.0](https://github.com/SoLiDinity/scribenote)
-  
+  <img width="128" height="128" alt="scribenote2" src="https://github.com/user-attachments/assets/14059f51-e58d-4815-a1a3-96f1399430aa" />
+
 </div>
 
 <div align="center">
@@ -29,8 +29,8 @@ Buat dan simpan catatan penting dengan bentuk <i>Sticky Notes</i>. Tulis catatan
 <i>Sticky Notes</i> yang dibuat dapat dikostumisasi dengan bebas baik warna latar, warna teks, serta letaknya.
 - <strong>📦 Memanfaatkan Local Storage</strong>  
 <i>Sticky Notes</i> yang dibuat akan selalu tersimpan pada <i>local storage</i> browser secara otomatis, dengan begitu catatan tidak akan hilang.
-- <strong>💾 Simpan Sticky Notes</strong>
-Papan <i>Sticky Notes</i> dapat disimpan dalam format gambar (.PNG) ke dalam direktori lokal.
+- <strong>💾 Simpan Sticky Notes</strong>  
+<i>Sticky Notes</i> dapat disimpan dalam format gambar (.PNG) ke dalam direktori lokal.
 
 ###### <i>*Note: format markdown yang disupport dapat merujuk pada [marked](https://github.com/markedjs/marked) atau [turndown](https://github.com/mixmark-io/turndown)</i>
 
